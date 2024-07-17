@@ -1,5 +1,6 @@
 package EQMSStepDefinition;
 
+import Core.ScreenShotUtil;
 import SearchPage.HeadOfPDPage;
 import SearchPage.HeadOfProductionPage;
 import io.cucumber.java.en.And;
@@ -29,5 +30,6 @@ public class HeadOfProductionStepDefinition {
     @Then("save and submit head of production information")
     public void saveAndSubmitHeadOfProductionInformation() {
         hp.saveAndSubmit();
+        ScreenShotUtil.getScreenshot("head of production details");
     }
 }

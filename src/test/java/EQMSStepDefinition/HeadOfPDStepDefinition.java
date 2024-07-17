@@ -1,5 +1,6 @@
 package EQMSStepDefinition;
 
+import Core.ScreenShotUtil;
 import SearchPage.HeadOfPDPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -29,6 +30,7 @@ public class HeadOfPDStepDefinition {
     @Then("save and submit head of pd information")
     public void saveAndSubmitHeadOfPdInformation() {
         hpp.saveAndSubmit();
+        ScreenShotUtil.getScreenshot("head of pd details");
     }
 
 }

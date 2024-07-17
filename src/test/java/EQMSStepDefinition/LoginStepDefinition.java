@@ -2,6 +2,7 @@ package EQMSStepDefinition;
 
 import Core.BrowserHelper;
 import Core.ScreenRecorderUtil;
+import Core.ScreenShotUtil;
 import SearchPage.LoginPage;
 import SearchPage.MarketingRepresentativePage;
 import io.cucumber.java.en.And;
@@ -35,7 +36,7 @@ public class LoginStepDefinition {
 
     @And("click login button")
     public void clickLoginButton() {
-        //ScreenShotUtil.getScreenshot("login credential");
+        ScreenShotUtil.getScreenshot("login credential");
         lp.loginButton();
 
     }
@@ -44,7 +45,7 @@ public class LoginStepDefinition {
     public void successfullyNavigateToTheDashboard() {
 
         lp.successfullyLogin();
-       // ScreenShotUtil.getScreenshot("login successfully");
+        ScreenShotUtil.getScreenshot("login successfully");
     }
 
 

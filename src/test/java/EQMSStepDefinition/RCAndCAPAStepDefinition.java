@@ -1,6 +1,7 @@
 package EQMSStepDefinition;
 
 import Core.ScreenRecorderUtil;
+import Core.ScreenShotUtil;
 import SearchPage.RCAndCAPATeamPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -33,6 +34,7 @@ public class RCAndCAPAStepDefinition {
     @Then("save and submit rc and capa information")
     public void saveAndSubmitRcAndCapaInformation() {
         rc.saveAndSubmit();
+        ScreenShotUtil.getScreenshot("rc and capa  details");
 
     }
 

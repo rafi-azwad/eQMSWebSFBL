@@ -9,7 +9,7 @@ Feature: Approval Page
 
 
   @pdApproval
-  Scenario: Add QA Head Approval
+  Scenario: Add PD Head Approval
     Given click on pd head approval option
     When select reference number of qa head approval
     And fill in the comment field
@@ -17,7 +17,7 @@ Feature: Approval Page
 
 
   @productionApproval
-  Scenario: Add QA Head Approval
+  Scenario: Add Production Head Approval
     Given click on production head approval option
     When select reference number of qa head approval
     And fill in the comment field
@@ -25,7 +25,7 @@ Feature: Approval Page
 
 
   @factoryApproval
-  Scenario: Add QA Head Approval
+  Scenario: Add Factory Head Approval
     Given click on factory head approval option
     When select reference number of qa head approval
     And fill in the comment field
@@ -33,28 +33,28 @@ Feature: Approval Page
 
 
   @marketingHead
-  Scenario: Add QA Head Approval
+  Scenario: Add Marketing Head Acknowledgement
     Given click on marketing head acknowledgement option
     When select reference number of qa head approval
     And fill in the comment field
     Then save and submit the all information
 
   @actionTaken
-  Scenario: Add QA Head Approval
+  Scenario: Add Action Taken Report
     Given click on action taken report option
     When select reference number of qa head approval
     And fill in the comment field
     Then save and submit the all information
 
   @salesHead
-  Scenario: Add QA Head Approval
+  Scenario: Add Sales Head Acknowledgement
     Given click on sales head acknowledgement option
     When select reference number of qa head approval
     And fill in the comment field
     Then save and submit the all information
 
   @complaintClose
-  Scenario: Add QA Head Approval
+  Scenario: Add Complaint Close
     Given click on complaint close option
     When select reference number of qa head approval
     And fill in the comment field

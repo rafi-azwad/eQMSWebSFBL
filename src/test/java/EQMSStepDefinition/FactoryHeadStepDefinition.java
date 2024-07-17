@@ -1,5 +1,6 @@
 package EQMSStepDefinition;
 
+import Core.ScreenShotUtil;
 import SearchPage.FactoryHeadPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -29,6 +30,7 @@ public class FactoryHeadStepDefinition {
     @Then("save and submit factory head information")
     public void saveAndSubmitFactoryHeadInformation() throws InterruptedException {
         fh.selectProcessStatus();
+        ScreenShotUtil.getScreenshot("factory head details");
     }
 
 

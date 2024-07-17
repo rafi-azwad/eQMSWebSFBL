@@ -1,5 +1,6 @@
 package EQMSStepDefinition;
 
+import Core.ScreenShotUtil;
 import SearchPage.CustomerComplaintsPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -33,6 +34,7 @@ public class CustomerComplaintsStepDefinition {
     public void saveAndSubmitTheInformation() throws InterruptedException {
         cc.saveInformation();
         cc.submitInformation();
+        ScreenShotUtil.getScreenshot("customer complaints details");
 
     }
 

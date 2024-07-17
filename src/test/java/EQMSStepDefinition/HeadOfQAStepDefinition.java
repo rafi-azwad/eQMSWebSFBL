@@ -1,5 +1,6 @@
 package EQMSStepDefinition;
 
+import Core.ScreenShotUtil;
 import SearchPage.HeadOfQAPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -31,5 +32,6 @@ public class HeadOfQAStepDefinition {
     @Then("save and submit the qa information")
     public void saveAndSubmitTheQaInformation() throws InterruptedException {
         hqa.selectProcessStatus();
+        ScreenShotUtil.getScreenshot("head of qa details");
     }
 }

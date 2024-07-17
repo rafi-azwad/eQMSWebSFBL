@@ -1,5 +1,6 @@
 package EQMSStepDefinition;
 
+import Core.ScreenShotUtil;
 import SearchPage.MarketingRepresentativePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -30,11 +31,12 @@ public class MarketingRepresentativeStepDefinition {
         mr.selectRefNO();
         mr.assessmentComment();
         mr.selectFurtherStatus();
-        mr.selectProcessStatus();
+
     }
 
     @Then("save and submit IMD information")
-    public void saveAndSubmitIMDInformation() {
-        System.out.println("Successfully update the data");
+    public void saveAndSubmitIMDInformation() throws InterruptedException {
+        mr.selectProcessStatus();
+        ScreenShotUtil.getScreenshot("marketing representative details");
     }
 }

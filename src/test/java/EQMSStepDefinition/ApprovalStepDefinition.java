@@ -1,6 +1,7 @@
 package EQMSStepDefinition;
 
 import Core.ScreenRecorderUtil;
+import Core.ScreenShotUtil;
 import SearchPage.ApprovalPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -31,6 +32,7 @@ public class ApprovalStepDefinition {
     @Then("save and submit the all information")
     public void saveAndSubmitTheAllInformation() {
         ap.saveAndSubmit();
+        ScreenShotUtil.getScreenshot("head of qa/pd/production/factory/marketing... approval details");
 
     }
 
